@@ -433,15 +433,15 @@ var forgotPassword = function () {
   loginButtonsSession.resetMessages();
 
   var email = trimmedElementValueById("forgot-password-email");
-  if (email.indexOf('@') !== -1) {
+  if (Accounts._loginButtons.validateEmail(email)) {
     Accounts.forgotPassword({email: email}, function (error) {
       if (error)
-        loginButtonsSession.errorMessage(error.reason || "Unknown error");
+        loginButtonsSession.errorMessage(error.reason || "שגיאה לא ידועה");
       else
-        loginButtonsSession.infoMessage("Email sent");
+        loginButtonsSession.infoMessage("אימייל נשלח");
     });
   } else {
-    loginButtonsSession.infoMessage("Email sent");
+    loginButtonsSession.errorMessage("כתובת אימייל שגויה.");
   }
 };
 
