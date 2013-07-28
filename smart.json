@@ -1,8 +1,8 @@
 {
-  "name": "accounts-ui-bootstrap-dropdown",
-  "description": "Meteor's accounts templates styled for bootstrap dropdown menu",
-  "homepage": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown",
-  "author": "Eric Robitaille <eric@vianet.ca>",
-  "version": "0.1.5",
-  "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git"
+  "name": "accounts-ui-bootstrap-dropdown-hebrew",
+  "description": "Meteor's accounts templates styled for bootstrap dropdown menu - in Hebrew",
+  "homepage": "https://github.com/Ore4444/meteor-accounts-ui-bootstrap-dropdown-hebrew",
+  "author": "Ore Landau <Ore4444@gmail.com>",
+  "version": "0.0.1",
+  "git": "https://github.com/Ore4444/meteor-accounts-ui-bootstrap-dropdown-hebrew.git"
 }

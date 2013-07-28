@@ -196,48 +196,48 @@ Template._loginButtonsLoggedOutAllServices.hasPasswordService = function () {
 
 Template._loginButtonsLoggedOutPasswordService.fields = function () {
   var loginFields = [
-    {fieldName: 'username-or-email', fieldLabel: 'Username or Email',
+    {fieldName: 'username-or-email', fieldLabel: 'שם משתמש או אימייל',
      visible: function () {
        return _.contains(
          ["USERNAME_AND_EMAIL", "USERNAME_AND_OPTIONAL_EMAIL"],
          Accounts.ui._passwordSignupFields());
      }},
-    {fieldName: 'username', fieldLabel: 'Username',
+    {fieldName: 'username', fieldLabel: 'שם משתמש',
      visible: function () {
        return Accounts.ui._passwordSignupFields() === "USERNAME_ONLY";
      }},
-    {fieldName: 'email', fieldLabel: 'Email', inputType: 'email',
+    {fieldName: 'email', fieldLabel: 'אימייל', inputType: 'email',
      visible: function () {
        return Accounts.ui._passwordSignupFields() === "EMAIL_ONLY";
      }},
-    {fieldName: 'password', fieldLabel: 'Password', inputType: 'password',
+    {fieldName: 'password', fieldLabel: 'סיסמא', inputType: 'password',
      visible: function () {
        return true;
      }}
   ];
 
   var signupFields = [
-    {fieldName: 'username', fieldLabel: 'Username',
+    {fieldName: 'username', fieldLabel: 'שם משתמש',
      visible: function () {
        return _.contains(
          ["USERNAME_AND_EMAIL", "USERNAME_AND_OPTIONAL_EMAIL", "USERNAME_ONLY"],
          Accounts.ui._passwordSignupFields());
      }},
-    {fieldName: 'email', fieldLabel: 'Email', inputType: 'email',
+    {fieldName: 'email', fieldLabel: 'אימייל', inputType: 'email',
      visible: function () {
        return _.contains(
          ["USERNAME_AND_EMAIL", "EMAIL_ONLY"],
          Accounts.ui._passwordSignupFields());
      }},
-    {fieldName: 'email', fieldLabel: 'Email (optional)', inputType: 'email',
+    {fieldName: 'email', fieldLabel: 'אימייל (אופציונאלי)', inputType: 'email',
      visible: function () {
        return Accounts.ui._passwordSignupFields() === "USERNAME_AND_OPTIONAL_EMAIL";
      }},
-    {fieldName: 'password', fieldLabel: 'Password', inputType: 'password',
+    {fieldName: 'password', fieldLabel: 'סיסמא', inputType: 'password',
      visible: function () {
        return true;
      }},
-    {fieldName: 'password-again', fieldLabel: 'Password (again)',
+    {fieldName: 'password-again', fieldLabel: 'סיסמא (שוב)',
      inputType: 'password',
      visible: function () {
        // No need to make users double-enter their password if
@@ -296,15 +296,15 @@ Template._loginButtonsChangePassword.events({
 
 Template._loginButtonsChangePassword.fields = function () {
   return [
-    {fieldName: 'old-password', fieldLabel: 'Current Password', inputType: 'password',
+    {fieldName: 'old-password', fieldLabel: 'סיסמא נוכחית', inputType: 'password',
      visible: function () {
        return true;
      }},
-    {fieldName: 'password', fieldLabel: 'New Password', inputType: 'password',
+    {fieldName: 'password', fieldLabel: 'סיסמא חדשה', inputType: 'password',
      visible: function () {
        return true;
      }},
-    {fieldName: 'password-again', fieldLabel: 'New Password (again)',
+    {fieldName: 'password-again', fieldLabel: 'סיסמא חדשה (שוב)',
      inputType: 'password',
      visible: function () {
        // No need to make users double-enter their password if

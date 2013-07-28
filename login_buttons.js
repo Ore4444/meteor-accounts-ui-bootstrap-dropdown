@@ -166,7 +166,7 @@ Accounts._loginButtons.validateUsername = function (username) {
   if (username.length >= 3) {
     return true;
   } else {
-    loginButtonsSession.errorMessage("Username must be at least 3 characters long");
+    loginButtonsSession.errorMessage("שם המשתמש צריך להיות לפחות 3 תווים.");
     return false;
   }
 };
@@ -177,7 +177,7 @@ Accounts._loginButtons.validateEmail = function (email) {
   if (email.indexOf('@') !== -1) {
     return true;
   } else {
-    loginButtonsSession.errorMessage("Invalid email");
+    loginButtonsSession.errorMessage("אימייל שגוי.");
     return false;
   }
 };
@@ -185,7 +185,7 @@ Accounts._loginButtons.validatePassword = function (password) {
   if (password.length >= 6) {
     return true;
   } else {
-    loginButtonsSession.errorMessage("Password must be at least 6 characters long");
+    loginButtonsSession.errorMessage("סיסמא צריכה להיות לפחות 6 תווים.");
     return false;
   }
 };

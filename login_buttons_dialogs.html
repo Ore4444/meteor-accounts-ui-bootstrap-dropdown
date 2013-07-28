@@ -14,12 +14,12 @@
 
     <div class="accounts-dialog accounts-centered-dialog">
       <label id="reset-password-new-password-label" for="reset-password-new-password">
-        New password
+        סיסמא חדשה
       </label>
       <input id="reset-password-new-password" type="password" />
       {{> _loginButtonsMessages}}
       <div class="login-button login-button-form-submit" id="login-buttons-reset-password-button">
-        Set password
+        הגדרת סיסמא
       </div>
       <a class="accounts-close" id="login-buttons-cancel-reset-password">&times;</a>
     </div>
@@ -31,12 +31,12 @@
     <div class="hide-background"></div>
     <div class="accounts-dialog accounts-centered-dialog">
       <label id="enroll-account-password-label" for="enroll-account-password">
-        Choose a password
+        בחירת סיסמא
       </label>
       <input id="enroll-account-password" type="password" />
       {{> _loginButtonsMessages}}
       <div class="login-button login-button-form-submit" id="login-buttons-enroll-account-button">
-        Create account
+        יצירת חשבון
       </div>
       <a class="accounts-close" id="login-buttons-cancel-enroll-account">&times;</a>
     </div>
@@ -46,7 +46,7 @@
 <template name="_justVerifiedEmailDialog">
   {{#if visible}}
     <div class="accounts-dialog accounts-centered-dialog">
-      Email verified
+      כתובת אימייל מאושרת
       <div class="login-button" id="just-verified-dismiss-button">Dismiss</div>
     </div>
   {{/if}}
@@ -57,7 +57,7 @@
     <div id="configure-login-service-dialog" class="accounts-dialog accounts-centered-dialog">
       {{{configurationSteps}}}
       <p>
-        Now, copy over some details.
+        עכשיו, תעתיקו מספר פרטים.
       </p>
       <p>
         <table>
@@ -79,14 +79,14 @@
       </p>
       <div class="new-section">
         <div class="login-button configure-login-service-dismiss-button">
-          I'll do this later
+          אעשה זאת יותר מאוחר
         </div>
         <a class="accounts-close configure-login-service-dismiss-button">&times;</a>
 
         {{#isolate}}
           <div class="login-button login-button-configure {{#if saveDisabled}}login-button-disabled{{/if}}"
              id="configure-login-service-dialog-save-configuration">
-            Save Configuration
+            שמירת הגדרות
           </div>
         {{/isolate}}
       </div>
@@ -98,7 +98,7 @@
   {{#if visible}}
     <div class="accounts-dialog accounts-centered-dialog" id="login-buttons-message-dialog">
       {{> _loginButtonsMessages}}
-      <div class="login-button" id="messages-dialog-dismiss-button">Dismiss</div>
+      <div class="login-button" id="messages-dialog-dismiss-button">סגור</div>
     </div>
   {{/if}}
 </template>
